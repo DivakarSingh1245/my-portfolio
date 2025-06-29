@@ -1,27 +1,103 @@
+/* Global reset and base font */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
-header, footer {
-  background: #222;
-  color: #fff;
+/* Header section */
+header {
+  background: linear-gradient(90deg, #004aad, #007fff);
+  color: white;
+  padding: 60px 20px;
   text-align: center;
-  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-section {
-  padding: 20px;
-  margin: 10px auto;
-  max-width: 800px;
-  background: white;
+header .container {
+  background: transparent; /* 🔥 White background hata diya */
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #004aad;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007fff;
+}
+
+/* Content section wrapper */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Section headings */
 h2 {
-  color: #005aaa;
+  color: #004aad;
+  border-bottom: 2px solid #007fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
+
+/* Project section */
+.project {
+  margin-bottom: 25px;
+  padding-left: 10px;
+  border-left: 3px solid #007fff;
+}
+
+/* Resume download button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004aad;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color:
